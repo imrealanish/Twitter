@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --primary-color: #1ca1f1;
+    --text-color: rgba(0, 0, 0, 0.5);
+    --text-white: #fff;
+
+}
+
+/* Common Css */
+.btn {
+    background: var(--primary-color);
+    color: var(--text-white);
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    padding: 10px 40px;
+}
+
+.btn:hover {
+    background: rgba(28, 161, 241,0.6);
+}
+
+.tweet_btn {
+    margin-top: 40px;
+}
+
+
+/* Main Css */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 15vw;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.side_links ul {
+    list-style-type: none;
+}
+
+.side_links ul li {
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    color: var(--text-color);
+    transition: 0.3s all;
+}
+
+.side_links ul li:hover,
+.side_links ul li.active {
+    color: var(--primary-color);
+}
+
+.side_links ul li span {
+    margin-left: 5px;
+}
